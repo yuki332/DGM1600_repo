@@ -3,7 +3,7 @@ using System.Collections;
 
 public class variablesAndFunction : MonoBehaviour
 {   
-	int myInt = 10;
+	int myInt = 2;
 	
 	
 	void Start ()
@@ -16,7 +16,7 @@ public class variablesAndFunction : MonoBehaviour
 	int MultiplyByTwo (int number)
 	{
 		int ret;
-		ret = number * 2;
+		ret = number * 4;
 		return ret;
 	}
 }

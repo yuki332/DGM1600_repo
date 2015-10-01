@@ -1,40 +1,15 @@
-﻿/*
-using UnityEngine;
-using System.Collections;
-
-public class ifStatement : MonoBehaviour {
-	float coffeeTemperature = 85.0f;
-	float hotLimitTemperature = 70.0f;
-	float coldLimitTemperature = 40.0f;
-
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetKeyDown(KeyCode.Space))
-			TemperatureTest();
-
-		coffeeTemperature -= Time.deltaTime * 5f;
-	}
-	void TemperatureTest (){
-		if(coffeeTemperature > hotLimitTemperature){
-			print("Coffee is too hot.");
-		}
-		else if(coffeeTemperature < coldLimitTemperature){
-			print("Coffee is too cold.");
-		}
-		else{
-			print("Coffee is just right.");
-		}
-
-	}
-
-}
-*/
-
+﻿
 using UnityEngine;
 using System.Collections;
 
 public class ifStatement : MonoBehaviour
 {
+	float cookTime = 0;
+	float wellDone = 30;
+	float medium = 20;
+	float rare = 10;
+
+
 	float coffeeTemperature = 85.0f;
 	float hotLimitTemperature = 70.0f;
 	float coldLimitTemperature = 40.0f;
@@ -42,22 +17,22 @@ public class ifStatement : MonoBehaviour
 	void Update ()
 	{
 		if(Input.GetKeyDown(KeyCode.Space))
-			TemperatureTest();
+			cookTimer();
 		
-		coffeeTemperature -= Time.deltaTime * 5f;
+		cookTime += Time.deltaTime * 5f;
 	}
 	
 	
-	void TemperatureTest ()
+	void cookTimer ()
 	{
 		// If the coffee's temperature is greater than the hottest drinking temperature...
-		if(coffeeTemperature > hotLimitTemperature)
+		if(cookTime < rare)
 		{
 			// ... do this.
-			print("Coffee is too hot.");
+			print("your meat is rare.");
 		}
 		// If it isn't, but the coffee temperature is less than the coldest drinking temperature...
-		else if(coffeeTemperature < coldLimitTemperature)
+		else if(cookTime < )
 		{
 			// ... do this.
 			print("Coffee is too cold.");

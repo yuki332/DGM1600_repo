@@ -5,11 +5,11 @@ public class DoWhileLoop : MonoBehaviour {
 	//do while loop
 	// Use this for initialization
 	void Start () {
-		bool shouldContinue = false;
+		bool eatFood = false;
 
 		do {
-			print ("Do While Loop");
-		} while(shouldContinue == true);
+			print ("taste food");
+		} while(eatFood == true);
 
 	}
 

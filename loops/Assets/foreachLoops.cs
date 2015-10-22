@@ -5,14 +5,15 @@ public class foreachLoops : MonoBehaviour {
 	//for each loop
 	// Use this for initialization
 	void Start () {
-		string[] items = new string[3];
+		string[] people = new string[4];
 
-		items[0] = "first item";
-		items[1] = "second item";
-		items[2] = "third item";
+		people[0] = "David";
+		people[1] = "John";
+		people[2] = "Lucas";
+		people[3] = "Noah";
 
-		foreach (string item in items) {
-			print (item);
+		foreach (string person in people) {
+			print (person);
 		}
 	
 	}

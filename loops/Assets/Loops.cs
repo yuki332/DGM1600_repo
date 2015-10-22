@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Loops : MonoBehaviour {
 	//ForLoop
-	int numSibrings = 4;
+	public int num = 4;
 	// Use this for initialization
 	void Start () {
-		for (int i = 0; i < numSibrings; i++)
-			Debug.Log ("counting sibrings: " + i);
+		for (int i = 0; i <= num; i++)
+			Debug.Log ("counting numbers: " + i);
 	}
 
 }
